@@ -11,7 +11,7 @@ class Diffwatch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Darwin_x86_64.tar.gz"
-      sha256 "241f0f824060a21e819cee1afd6d0e75606e6ab3a67e944522625224f64c3ec5"
+      sha256 "3a9a5d29cc21af8615e2697114f8a11b80d95a4d61c107ad900932e7598fa8e7"
 
       def install
         bin.install "diffwatch"
@@ -19,7 +19,7 @@ class Diffwatch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Darwin_arm64.tar.gz"
-      sha256 "39d31359bb373252c3fc7998c7119a9e3f91d693e316975fb6442f5c6219ae63"
+      sha256 "edf4d5f8e4746b4def13bbc4ee39e109333af796da74edc506d018ff591cc03b"
 
       def install
         bin.install "diffwatch"
@@ -30,14 +30,14 @@ class Diffwatch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "385665fc9dcda38907ab3aaa685656fcf6ac3c25dcf9f8e4e8ac12cdd1e37466"
+      sha256 "1ea0afde26a6f46acd7da82bbafc491b37a1b01817bb39433b385cc686ade784"
       def install
         bin.install "diffwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Linux_arm64.tar.gz"
-      sha256 "a9334fdcd22d2eeaa83b326a7ad370b175fef14236648d76dfee4da9b172f5a3"
+      sha256 "e037f5e38055739e2f26f21ad2d380ade757493777264d1a413fc6b8ce533849"
       def install
         bin.install "diffwatch"
       end
