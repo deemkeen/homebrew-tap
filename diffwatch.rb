@@ -5,21 +5,21 @@
 class Diffwatch < Formula
   desc "Real-time CLI tool for watching file changes and visualizing diffs"
   homepage "https://github.com/deemkeen/diffwatch"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.0/diffwatch_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "34b4819a5d7cb1ed2f3c753c12f9c25635729f296b36aee28af6c0922c44ee7a"
+      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Darwin_x86_64.tar.gz"
+      sha256 "241f0f824060a21e819cee1afd6d0e75606e6ab3a67e944522625224f64c3ec5"
 
       def install
         bin.install "diffwatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.0/diffwatch_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "4cc7df087e6736d8e06a497b202236ac99d5b3cf1ec959d66563d21add2a3887"
+      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Darwin_arm64.tar.gz"
+      sha256 "39d31359bb373252c3fc7998c7119a9e3f91d693e316975fb6442f5c6219ae63"
 
       def install
         bin.install "diffwatch"
@@ -29,15 +29,15 @@ class Diffwatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.0/diffwatch_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "177d3e4ac3c63ceed6386bd7d0138d850eaf504f25db6f44a57de224c15baf7c"
+      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Linux_x86_64.tar.gz"
+      sha256 "385665fc9dcda38907ab3aaa685656fcf6ac3c25dcf9f8e4e8ac12cdd1e37466"
       def install
         bin.install "diffwatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.0/diffwatch_1.0.0_Linux_arm64.tar.gz"
-      sha256 "f60b5c43a32d4500e55016e10611b66404e457b792a939ca49df93685b003519"
+      url "https://github.com/deemkeen/diffwatch/releases/download/v1.0.1/diffwatch_1.0.1_Linux_arm64.tar.gz"
+      sha256 "a9334fdcd22d2eeaa83b326a7ad370b175fef14236648d76dfee4da9b172f5a3"
       def install
         bin.install "diffwatch"
       end
